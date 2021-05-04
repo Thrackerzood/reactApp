@@ -1,7 +1,7 @@
 import React from 'react'
+import styles from './style.js'
 
 
-
-export default function MainList({mainList, index}){
-   return (<li>{index + 1} {mainList.title}</li>);
+export default function MainList({mainList}){
+   return (<li style={styles.li}>{mainList.title}</li>);
 }

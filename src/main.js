@@ -1,24 +1,17 @@
 import React from 'react'
 import MainList from './mainList.js'
-
-const styles = {
-   ul:{
-      listStyle: 'none',
-      margin: 0,
-      padding: 0,
-   }
-}
+import styles from './style.js'
 
 export default function Main(props){
    return(
-      <main>
-         <ul style={styles.ul}>
-            {props.li.map((list,index)=>{
+      <header style={styles.header}>
+         <ul style={styles.ul} className="ul">
+            {props.li.map((list)=>{
                return (
-                  <MainList mainList={list} key = {list.id} index = {index}/>
+                  <MainList mainList={list} key = {list.id}/>
                )
             })}
          </ul>
-      </main>
+      </header>
    )
 }
