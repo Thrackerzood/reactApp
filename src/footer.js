@@ -1,9 +1,13 @@
-import React from 'react'
+import React from "react"
 
-export default function Footer(){
-   return (
+class Footer extends React.Component{
+   render(){
+         return (
       <footer>
-         <p>footer</p>
+         <p><a href="https://github.com/Thrackerzood">https://github.com/Thrackerzood</a></p>
       </footer>
    )
+   }
 }
+
+export default Footer
